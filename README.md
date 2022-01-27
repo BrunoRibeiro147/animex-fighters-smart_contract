@@ -1,15 +1,12 @@
-# Basic Sample Hardhat Project
+# Animex Fighets
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Projeto para entender os conceitos básicos de solidity e smart contracts. 
+O projeto é simples, basicamente permite ao user escolher 1 entre 3 opções de NFT, cada NFT possui seu HP e seu AttackDamage, 
+e com seu NFT o user pode atacar o Boss, mas ele tem um limite de ataques, se seu NFT chegar ao HP 0, é game over.
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+npx hardhat run scripts/run.js   <- para rodar localmente
+npx hardhat run scripts/deploy.js --network rinkeby <- para subir para a blockchain, no caso usei uma de teste
 ```
